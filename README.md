@@ -1,4 +1,6 @@
 ﻿# Microsoft Quantum Development Kit Samples #
+ 
+ [![Run on Ainize](https://ainize.ai/static/images/run_on_ainize_button.svg)](https://ainize.web.app/redirect?git_repo=github.com/Lisayg/Quantum)
 
  [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/Microsoft/Quantum/master)
 
