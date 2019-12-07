@@ -40,6 +40,14 @@ RUN pip install "matplotlib<=2.1.2" \
                 "ipyparallel" \
                 "mpltools" \
                 "qinfer"
+                
+RUN jupyter notebook --generate-config --allow-root
+
+RUN echo "c.NotebookApp.password = u'sha1:6a3f528eec40:6e896b6e4828f525a6e20e5411cd1c8075d68619'" >> /root/.jupyter/jupyter_notebook_config.py
+
+EXPOSE 8888
+
+ENTRYPOINT jupyter notebook --allow-root --ip=0.0.0.0 --port=8888 --no-browser
 
 # Make sure the contents of our repo are in ${HOME}.
 # These steps are required for use on mybinder.org.
